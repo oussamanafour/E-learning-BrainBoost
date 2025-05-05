@@ -1,0 +1,2934 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?PowerDesigner AppLocale="UTF16" ID="{FA90EC71-5BCF-4BC3-9253-97950EC11997}" Label="" LastModificationDate="1721562550" Name="ModeleConceptuelDonnees_2" Objects="113" Symbols="21" Type="{5F45F978-C4F3-4E35-A3FC-AF3318663A0F}" signature="LDM_DATA_MODEL_XML" version="15.1.0.2850"?>
+<!-- Veuillez ne pas modifier ce fichier -->
+
+<Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
+
+<o:RootObject Id="o1">
+<c:Children>
+<o:Model Id="o2">
+<a:ObjectID>FA90EC71-5BCF-4BC3-9253-97950EC11997</a:ObjectID>
+<a:Name>ModeleConceptuelDonnees_2</a:Name>
+<a:Code>MODELECONCEPTUELDONNEES_2</a:Code>
+<a:CreationDate>1716846355</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1717239633</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {69CEB1D0-ED28-4B3F-AE21-84D089E435E2}
+DAT 1717239633
+DLD {B1AA1012-2D3A-49CA-9C83-0FE6267D1338}
+DLD {FEF63390-F0DE-419C-8608-7F3BFC43226B}
+DLD {4BC1DEB4-748F-4A0E-8C85-CDA62D78F51F}
+DLD {EE7D5C2D-4883-4F70-A794-0DA9313B7FF9},{B1AA1012-2D3A-49CA-9C83-0FE6267D1338}
+DLD {40FAB9F6-C97C-460F-A61A-C728E61ECBF4},{FEF63390-F0DE-419C-8608-7F3BFC43226B}
+DLD {0EC3C69A-B889-4603-BFA3-A0F6BB489013}
+DLD {FA08D466-0155-446F-93BF-E34AAC00F8D2}</a:History>
+<a:ModelOptionsText>[ModelOptions]
+
+[ModelOptions\Logical options]
+CaseSensitive=No
+DisplayName=Yes
+EnableTrans=No
+EnableRequirements=No
+Notation=4
+RlshUnique=Yes
+DefaultDttp=
+DomnCopyDttp=Yes
+DomnCopyChck=No
+DomnCopyRule=No
+DomnCopyExat=No
+DomnCopyMand=No
+DttpFullName=Yes
+RlshMigrateDomain=Yes
+RlshMigrateCheck=Yes
+RlshMigrateRule=Yes
+RlshMigrateExtd=Yes
+RlshAllowNN=No
+FKNameTemplate=%.3:PARENT%_%ATTRIBUTE%
+FKNameTemplateUsage=No
+
+[ModelOptions\Logical options\NamingOptionsTemplates]
+
+[ModelOptions\Logical options\ClssNamingOptions]
+
+[ModelOptions\Logical options\ClssNamingOptions\FILO]
+
+[ModelOptions\Logical options\ClssNamingOptions\FILO\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=&quot;\/:*?&lt;&gt;|&quot;
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Logical options\ClssNamingOptions\FILO\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_. &quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Logical options\ClssNamingOptions\FRMEOBJ]
+
+[ModelOptions\Logical options\ClssNamingOptions\FRMEOBJ\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Logical options\ClssNamingOptions\FRMEOBJ\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Logical options\ClssNamingOptions\FRMELNK]
+
+[ModelOptions\Logical options\ClssNamingOptions\FRMELNK\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Logical options\ClssNamingOptions\FRMELNK\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Logical options\ClssNamingOptions\DefaultClass]
+
+[ModelOptions\Logical options\ClssNamingOptions\DefaultClass\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Logical options\ClssNamingOptions\DefaultClass\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMPCKG]
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMPCKG\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMPCKG\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMDOMN]
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMDOMN\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMDOMN\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMENTT]
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMENTT\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMENTT\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMPROP]
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMPROP\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMPROP\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMIDTF]
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMIDTF\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMIDTF\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMRLSH]
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMRLSH\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMRLSH\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMINHR]
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMINHR\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMINHR\Code]
+Template=
+MaxLen=254
+Case=U
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Generate]
+
+[ModelOptions\Generate\Cdm]
+CheckModel=Yes
+SaveLinks=Yes
+NameToCode=No
+
+[ModelOptions\Generate\Pdm]
+CheckModel=Yes
+SaveLinks=Yes
+NameToCode=No
+BuildTrgr=No</a:ModelOptionsText>
+<c:GenerationOrigins>
+<o:Shortcut Id="o3">
+<a:ObjectID>8978E527-4444-4095-A547-9467E0492D72</a:ObjectID>
+<a:Name>ModeleConceptuelDonnees_1</a:Name>
+<a:Code>MODELECONCEPTUELDONNEES_1</a:Code>
+<a:CreationDate>1717239633</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1717239633</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:TargetStereotype/>
+<a:TargetID>69CEB1D0-ED28-4B3F-AE21-84D089E435E2</a:TargetID>
+<a:TargetClassID>1E597170-9350-11D1-AB3C-0020AF71E433</a:TargetClassID>
+</o:Shortcut>
+</c:GenerationOrigins>
+<c:LogicalDiagrams>
+<o:LogicalDiagram Id="o4">
+<a:ObjectID>9BAB72A6-48A8-419D-91FA-5CB920670718</a:ObjectID>
+<a:Name>Diagramme_1</a:Name>
+<a:Code>DIAGRAMME_1</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1717239633</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {06D0F4B2-6CAD-42EE-A82B-876EF77828CF}
+DAT 1716846357</a:History>
+<a:DisplayPreferences>[DisplayPreferences]
+
+[DisplayPreferences\LDM]
+
+[DisplayPreferences\General]
+Adjust to text=Yes
+Snap Grid=No
+Constrain Labels=Yes
+Display Grid=No
+Show Page Delimiter=Yes
+Grid size=0
+Graphic unit=2
+Window color=255, 255, 255
+Background image=
+Background mode=8
+Watermark image=
+Watermark mode=8
+Show watermark on screen=No
+Gradient mode=0
+Gradient end color=255, 255, 255
+Show Swimlane=No
+SwimlaneVert=Yes
+TreeVert=No
+CompDark=0
+
+[DisplayPreferences\Object]
+Mode=0
+Trunc Length=80
+Word Length=80
+Word Text=!&quot;&quot;#$%&amp;&#39;()*+,-./:;&lt;=&gt;?@[\]^_`{|}~
+Shortcut IntIcon=Yes
+Shortcut IntLoct=Yes
+Shortcut IntFullPath=No
+Shortcut IntLastPackage=Yes
+Shortcut ExtIcon=Yes
+Shortcut ExtLoct=No
+Shortcut ExtFullPath=No
+Shortcut ExtLastPackage=Yes
+Shortcut ExtIncludeModl=Yes
+EObjShowStrn=Yes
+ExtendedObject.Comment=No
+ExtendedObject.IconPicture=No
+ExtendedObject_SymbolLayout=
+ELnkShowStrn=Yes
+ELnkShowName=Yes
+ExtendedLink_SymbolLayout=
+FileObject.Stereotype=No
+FileObject.DisplayName=Yes
+FileObject.LocationOrName=No
+FileObject.IconPicture=No
+FileObject.IconMode=Yes
+FileObject_SymbolLayout=
+PckgStrn=Yes
+Package.Comment=No
+Package.IconPicture=No
+Package_SymbolLayout=
+Display Model Version=Yes
+EnttAttr=Yes
+PentMode=0
+PentNb=5
+EnttDttp=Yes
+EnttDomn=Yes
+EnttShowDomn=No
+EnttMand=Yes
+EnttCIdf=Yes
+EnttKeyI=Yes
+PentStrn=Yes
+IdtfStrn=Yes
+RlshName=Yes
+RlshRole=Yes
+RlshCard=No
+RlshDmnt=Yes
+RlshStrn=Yes
+InhrName=Yes
+InhrStrn=Yes
+Entity.IconPicture=No
+Entity_SymbolLayout=
+Inheritance.IconPicture=No
+Inheritance_SymbolLayout=
+EnttStrn=Yes
+EnttCmmt=No
+Association.IconPicture=No
+Association_SymbolLayout=
+AsscStrn=Yes
+AsscCmmt=No
+AsscAttr=Yes
+AsscDttp=Yes
+AsscDomn=Yes
+AsscShowDomn=No
+AsscMand=Yes
+AsscDLim=Yes
+AsscNb=5
+PassStrn=1
+LinkRole=Yes
+LinkCard=Yes
+LinkStrn=Yes
+
+[DisplayPreferences\Symbol]
+
+[DisplayPreferences\Symbol\FRMEOBJ]
+STRNFont=Arial,8,N
+STRNFont color=0, 0, 0
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0, 0, 0
+LABLFont=Arial,8,N
+LABLFont color=0, 0, 0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Width=6000
+Height=2000
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=6
+Brush bitmap mode=12
+Brush gradient mode=64
+Brush gradient color=192 192 192
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 255 128 128
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\FRMELNK]
+CENTERFont=Arial,8,N
+CENTERFont color=0, 0, 0
+Line style=2
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 128 128 255
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\FILO]
+OBJSTRNFont=Arial,8,N
+OBJSTRNFont color=0, 0, 0
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0, 0, 0
+LCNMFont=Arial,8,N
+LCNMFont color=0, 0, 0
+AutoAdjustToText=Yes
+Keep aspect=Yes
+Keep center=Yes
+Keep size=No
+Width=2400
+Height=2400
+Brush color=255 255 255
+Fill Color=No
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 0 0 255
+Shadow color=192 192 192
+Shadow=-1
+
+[DisplayPreferences\Symbol\LDMPCKG]
+STRNFont=Arial,8,N
+STRNFont color=0 0 0
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0 0 0
+LABLFont=Arial,8,N
+LABLFont color=0 0 0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Width=4800
+Height=3600
+Brush color=255 255 192
+Fill Color=Yes
+Brush style=6
+Brush bitmap mode=12
+Brush gradient mode=65
+Brush gradient color=255 255 255
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 178 178 178
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\LDMENTT]
+STRNFont=Arial,8,N
+STRNFont color=0 0 0
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0 0 0
+AttributesFont=Arial,8,N
+AttributesFont color=0 0 0
+LABLFont=Arial,8,N
+LABLFont color=0 0 0
+EntityPrimaryAttributeFont=Arial,8,U
+EntityPrimaryAttributeFont color=0 0 0
+EntityForeignAttributeFont=Arial,8,N
+EntityForeignAttributeFont color=0 0 0
+IdentifiersFont=Arial,8,N
+IdentifiersFont color=0 0 0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Width=4800
+Height=4000
+Brush color=234 181 21
+Fill Color=Yes
+Brush style=6
+Brush bitmap mode=12
+Brush gradient mode=65
+Brush gradient color=255 255 255
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 128 64 0
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\LDMRLSH]
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0 0 0
+NAMAFont=Arial,8,N
+NAMAFont color=0 0 0
+Line style=2
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 128 0 64
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\LDMINHR]
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0 0 0
+AutoAdjustToText=No
+Keep aspect=No
+Keep center=No
+Keep size=Yes
+Width=1575
+Height=1000
+Brush color=250 241 211
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 128 64 0
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\LDMLINH]
+Line style=2
+Pen=1 0 128 64 0
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\USRDEPD]
+OBJXSTRFont=Arial,8,N
+OBJXSTRFont color=0 0 0
+Line style=2
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=2 0 128 0 64
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\Free Symbol]
+Free TextFont=Arial,8,N
+Free TextFont color=0 0 0
+Line style=2
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 128 0 0
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\CDMPCKG]
+STRNFont=Arial,8,N
+STRNFont color=0 0 0
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0 0 0
+LABLFont=Arial,8,N
+LABLFont color=0 0 0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Width=4800
+Height=3600
+Brush color=255 255 192
+Fill Color=Yes
+Brush style=6
+Brush bitmap mode=12
+Brush gradient mode=65
+Brush gradient color=255 255 255
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 178 178 178
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\ENTT]
+STRNFont=Arial,8,N
+STRNFont color=0 0 0
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0 0 0
+AttributesFont=Arial,8,N
+AttributesFont color=0 0 0
+LABLFont=Arial,8,N
+LABLFont color=0 0 0
+EntityPrimaryAttributeFont=Arial,8,U
+EntityPrimaryAttributeFont color=0 0 0
+IdentifiersFont=Arial,8,N
+IdentifiersFont color=0 0 0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Width=4800
+Height=4000
+Brush color=233 202 131
+Fill Color=Yes
+Brush style=6
+Brush bitmap mode=12
+Brush gradient mode=65
+Brush gradient color=255 255 255
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 128 128 64
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\RLSH]
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0 0 0
+NAMAFont=Arial,8,N
+NAMAFont color=0 0 0
+Line style=2
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 128 0 64
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\ASSC]
+STRNFont=Arial,8,N
+STRNFont color=0, 0, 0
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0, 0, 0
+AttributesFont=Arial,8,N
+AttributesFont color=0, 0, 0
+LABLFont=Arial,8,N
+LABLFont color=0, 0, 0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Width=4800
+Height=3000
+Brush color=208 208 255
+Fill Color=Yes
+Brush style=6
+Brush bitmap mode=12
+Brush gradient mode=65
+Brush gradient color=255 255 255
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 128 128 255
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\LINK]
+ROLEFont=Arial,8,N
+ROLEFont color=0, 0, 0
+CARDFont=Arial,8,N
+CARDFont color=0, 0, 0
+Line style=2
+Pen=1 0 128 128 255
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\CDMINHR]
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0 0 0
+AutoAdjustToText=No
+Keep aspect=No
+Keep center=No
+Keep size=Yes
+Width=1575
+Height=1000
+Brush color=233 202 131
+Fill Color=Yes
+Brush style=6
+Brush bitmap mode=12
+Brush gradient mode=65
+Brush gradient color=255 255 255
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 128 0 0
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\LINH]
+Line style=2
+Pen=1 0 128 0 0
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\CDM]</a:DisplayPreferences>
+<a:PaperSize>(8268, 11693)</a:PaperSize>
+<a:PageMargins>((315,354), (433,354))</a:PageMargins>
+<a:PageOrientation>1</a:PageOrientation>
+<a:PaperSource>4</a:PaperSource>
+<c:Symbols>
+<o:RelationshipSymbol Id="o5">
+<a:ModificationDate>1717239700</a:ModificationDate>
+<a:Rect>((-17071,20675), (17715,22721))</a:Rect>
+<a:ListOfPoints>((-17071,21857),(472,21857),(472,21985),(17715,21985))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>55</a:ArrowStyle>
+<a:LineColor>16744576</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N
+NAMA 0 Arial,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o6"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o7"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o8"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o9">
+<a:ModificationDate>1717239691</a:ModificationDate>
+<a:Rect>((16382,1160), (19682,21888))</a:Rect>
+<a:ListOfPoints>((17770,21888),(17770,11319),(18295,11319),(18295,1160))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>55</a:ArrowStyle>
+<a:LineColor>16744576</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N
+NAMA 0 Arial,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o7"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o10"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o11"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o12">
+<a:ModificationDate>1721562521</a:ModificationDate>
+<a:Rect>((16725,-23394), (19499,1160))</a:Rect>
+<a:ListOfPoints>((18075,-23394),(18075,-12454),(18150,-12454),(18150,1160))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>14080</a:ArrowStyle>
+<a:LineColor>16744576</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N
+NAMA 0 Arial,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o13"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o10"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o14"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o15">
+<a:ModificationDate>1721562550</a:ModificationDate>
+<a:Rect>((-3145,-23981), (18102,-10848))</a:Rect>
+<a:ListOfPoints>((-1720,-10848),(-1720,-23394),(18102,-23394))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>55</a:ArrowStyle>
+<a:LineColor>16744576</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N
+NAMA 0 Arial,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o16"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o13"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o17"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o18">
+<a:ModificationDate>1721562532</a:ModificationDate>
+<a:Rect>((-7120,-7610), (14663,1378))</a:Rect>
+<a:ListOfPoints>((13651,1378),(13651,-7023),(-7120,-7023))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>14080</a:ArrowStyle>
+<a:LineColor>16744576</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N
+NAMA 0 Arial,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o10"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o16"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o19"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o20">
+<a:ModificationDate>1721562539</a:ModificationDate>
+<a:Rect>((-15750,1219), (-118,3266))</a:Rect>
+<a:ListOfPoints>((-118,1978),(-7953,1978),(-7953,2953),(-15750,2953))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>14080</a:ArrowStyle>
+<a:LineColor>16744576</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N
+NAMA 0 Arial,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o21"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o22"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o23"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o24">
+<a:ModificationDate>1721562539</a:ModificationDate>
+<a:Rect>((-24,385), (17625,2431))</a:Rect>
+<a:ListOfPoints>((-24,1808),(9139,1808),(9139,562),(17625,562))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>14080</a:ArrowStyle>
+<a:LineColor>16744576</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N
+NAMA 0 Arial,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o21"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o10"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o25"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o26">
+<a:ModificationDate>1717239716</a:ModificationDate>
+<a:Rect>((994,12891), (17700,22869))</a:Rect>
+<a:ListOfPoints>((994,14137),(14400,14137),(14400,22869))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>14080</a:ArrowStyle>
+<a:LineColor>16744576</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N
+NAMA 0 Arial,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o27"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o7"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o28"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o29">
+<a:ModificationDate>1721562510</a:ModificationDate>
+<a:Rect>((-21450,4249), (736,15544))</a:Rect>
+<a:ListOfPoints>((736,14298),(-18150,14298),(-18150,4249))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>14080</a:ArrowStyle>
+<a:LineColor>16744576</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N
+NAMA 0 Arial,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o27"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o22"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o30"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o31">
+<a:ModificationDate>1721562519</a:ModificationDate>
+<a:Rect>((-20272,-24662), (-16148,4849))</a:Rect>
+<a:ListOfPoints>((-18457,-24662),(-18457,-6532),(-17964,-6532),(-17964,4849))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>14080</a:ArrowStyle>
+<a:LineColor>16744576</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N
+NAMA 0 Arial,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o32"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o22"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o33"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o34">
+<a:ModificationDate>1721562550</a:ModificationDate>
+<a:Rect>((-17107,-26746), (13275,-24699))</a:Rect>
+<a:ListOfPoints>((-17107,-25946),(13275,-25946))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>14080</a:ArrowStyle>
+<a:LineColor>16744576</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N
+NAMA 0 Arial,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o32"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o13"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o35"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:EntitySymbol Id="o22">
+<a:ModificationDate>1721562510</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((-25032,-1870), (-11474,7793))</a:Rect>
+<a:AutoAdjustToText>0</a:AutoAdjustToText>
+<a:LineColor>4227200</a:LineColor>
+<a:FillColor>8637161</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+LABL 0 Arial,8,N
+EntityPrimaryAttribute 0 Arial,8,U
+EntityForeignAttribute 0 Arial,8,N
+Identifiers 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<a:ManuallyResized>1</a:ManuallyResized>
+<c:Object>
+<o:Entity Ref="o36"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o6">
+<a:ModificationDate>1717239695</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((-23732,20382), (-10410,24902))</a:Rect>
+<a:AutoAdjustToText>0</a:AutoAdjustToText>
+<a:LineColor>4227200</a:LineColor>
+<a:FillColor>8637161</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+LABL 0 Arial,8,N
+EntityPrimaryAttribute 0 Arial,8,U
+EntityForeignAttribute 0 Arial,8,N
+Identifiers 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<a:ManuallyResized>1</a:ManuallyResized>
+<c:Object>
+<o:Entity Ref="o37"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o7">
+<a:ModificationDate>1717239693</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((11355,17083), (24525,26695))</a:Rect>
+<a:AutoAdjustToText>0</a:AutoAdjustToText>
+<a:LineColor>4227200</a:LineColor>
+<a:FillColor>8637161</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+LABL 0 Arial,8,N
+EntityPrimaryAttribute 0 Arial,8,U
+EntityForeignAttribute 0 Arial,8,N
+Identifiers 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<a:ManuallyResized>1</a:ManuallyResized>
+<c:Object>
+<o:Entity Ref="o38"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o10">
+<a:ModificationDate>1717239659</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((11324,-4645), (24928,6965))</a:Rect>
+<a:AutoAdjustToText>0</a:AutoAdjustToText>
+<a:LineColor>4227200</a:LineColor>
+<a:FillColor>8637161</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+LABL 0 Arial,8,N
+EntityPrimaryAttribute 0 Arial,8,U
+EntityForeignAttribute 0 Arial,8,N
+Identifiers 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<a:ManuallyResized>1</a:ManuallyResized>
+<c:Object>
+<o:Entity Ref="o39"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o13">
+<a:ModificationDate>1721562550</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((11833,-29147), (24371,-17641))</a:Rect>
+<a:AutoAdjustToText>0</a:AutoAdjustToText>
+<a:LineColor>4227200</a:LineColor>
+<a:FillColor>8637161</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+LABL 0 Arial,8,N
+EntityPrimaryAttribute 0 Arial,8,U
+EntityForeignAttribute 0 Arial,8,N
+Identifiers 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<a:ManuallyResized>1</a:ManuallyResized>
+<c:Object>
+<o:Entity Ref="o40"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o21">
+<a:ModificationDate>1721562539</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((-5032,-2567), (4800,5919))</a:Rect>
+<a:AutoAdjustToText>0</a:AutoAdjustToText>
+<a:LineColor>16744576</a:LineColor>
+<a:FillColor>16765136</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+LABL 0 Arial,8,N
+EntityPrimaryAttribute 0 Arial,8,U
+EntityForeignAttribute 0 Arial,8,N
+Identifiers 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<a:ManuallyResized>1</a:ManuallyResized>
+<c:Object>
+<o:Entity Ref="o41"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o42">
+<a:ModificationDate>1721562544</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((-7501,25704), (6129,35368))</a:Rect>
+<a:AutoAdjustToText>0</a:AutoAdjustToText>
+<a:LineColor>4227200</a:LineColor>
+<a:FillColor>8637161</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+LABL 0 Arial,8,N
+EntityPrimaryAttribute 0 Arial,8,U
+EntityForeignAttribute 0 Arial,8,N
+Identifiers 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<a:ManuallyResized>1</a:ManuallyResized>
+<c:Object>
+<o:Entity Ref="o43"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o27">
+<a:ModificationDate>1717239716</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((-5657,10767), (7125,17507))</a:Rect>
+<a:AutoAdjustToText>0</a:AutoAdjustToText>
+<a:LineColor>16744576</a:LineColor>
+<a:FillColor>16765136</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+LABL 0 Arial,8,N
+EntityPrimaryAttribute 0 Arial,8,U
+EntityForeignAttribute 0 Arial,8,N
+Identifiers 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<a:ManuallyResized>1</a:ManuallyResized>
+<c:Object>
+<o:Entity Ref="o44"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o16">
+<a:ModificationDate>1721562527</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((-7758,-15336), (4318,-6360))</a:Rect>
+<a:AutoAdjustToText>0</a:AutoAdjustToText>
+<a:LineColor>4227200</a:LineColor>
+<a:FillColor>8637161</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+LABL 0 Arial,8,N
+EntityPrimaryAttribute 0 Arial,8,U
+EntityForeignAttribute 0 Arial,8,N
+Identifiers 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<a:ManuallyResized>1</a:ManuallyResized>
+<c:Object>
+<o:Entity Ref="o45"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o32">
+<a:ModificationDate>1721562519</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((-24000,-28034), (-10072,-21294))</a:Rect>
+<a:AutoAdjustToText>0</a:AutoAdjustToText>
+<a:LineColor>16744576</a:LineColor>
+<a:FillColor>16765136</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+LABL 0 Arial,8,N
+EntityPrimaryAttribute 0 Arial,8,U
+EntityForeignAttribute 0 Arial,8,N
+Identifiers 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Entity Ref="o46"/>
+</c:Object>
+</o:EntitySymbol>
+</c:Symbols>
+</o:LogicalDiagram>
+</c:LogicalDiagrams>
+<c:DefaultDiagram>
+<o:LogicalDiagram Ref="o4"/>
+</c:DefaultDiagram>
+<c:Entities>
+<o:Entity Id="o36">
+<a:ObjectID>ADB9FCA6-A380-4530-ADC3-2F18F37CF679</a:ObjectID>
+<a:Name>USERS</a:Name>
+<a:Code>USERS</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1717239633</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {DD8D0D6F-6848-4A5F-A7AA-954D1EB2CFD3}
+DAT 1716846357</a:History>
+<c:Identifiers>
+<o:Identifier Id="o47">
+<a:ObjectID>9BF84378-9016-4A1B-B53B-0F85D61661CC</a:ObjectID>
+<a:Name>id_user</a:Name>
+<a:Code>ID_USER</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {8355CD5D-9288-43B0-9530-9522E40768EE}
+DAT 1716846357</a:History>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o48"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o47"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o48">
+<a:ObjectID>81E62251-A833-4D5E-815D-8E4E307D67B5</a:ObjectID>
+<a:Name>id_user</a:Name>
+<a:Code>ID_USER</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {B779F889-CA39-4FA8-B2B8-3211918088AB}
+DAT 1716846357</a:History>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o49">
+<a:ObjectID>943F74F9-1ED1-42CB-BE14-5587767C6C27</a:ObjectID>
+<a:Name>first_name</a:Name>
+<a:Code>FIRST_NAME</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {5A29FF16-2FAE-4853-95DF-38CBF810DC2D}
+DAT 1716846357</a:History>
+<a:DataType>A30</a:DataType>
+<a:Length>30</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o50">
+<a:ObjectID>3C6FB297-00C3-4376-9491-488F7FFE2B70</a:ObjectID>
+<a:Name>last_name</a:Name>
+<a:Code>LAST_NAME</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {FA20F354-BE8A-416D-847D-807175E16841}
+DAT 1716846357</a:History>
+<a:DataType>A30</a:DataType>
+<a:Length>30</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o51">
+<a:ObjectID>FBE5D90D-3971-4716-8BE5-1C0477A5B8F8</a:ObjectID>
+<a:Name>email</a:Name>
+<a:Code>EMAIL</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {78988711-554A-4790-B654-6F91F17FC24F}
+DAT 1716846357</a:History>
+<a:DataType>A50</a:DataType>
+<a:Length>50</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o52">
+<a:ObjectID>77966D71-06F4-4C72-BA5E-736AC8717A61</a:ObjectID>
+<a:Name>password</a:Name>
+<a:Code>PASSWORD</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {DB505C86-209C-4982-9CDC-884D14FAEE85}
+DAT 1716846357</a:History>
+<a:DataType>A255</a:DataType>
+<a:Length>255</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o53">
+<a:ObjectID>06FA9715-6E9E-4566-944A-E30AD56C90A5</a:ObjectID>
+<a:Name>date_creation</a:Name>
+<a:Code>DATE_CREATION</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1717239633</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {AD0B9445-1518-4643-BEFF-D3FE34BC33C2}
+DAT 1716846357</a:History>
+<a:DataType>DT</a:DataType>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o54">
+<a:ObjectID>20F9B1A9-0F3F-466D-BF7A-FE41EF1E4C5B</a:ObjectID>
+<a:Name>last_login</a:Name>
+<a:Code>LAST_LOGIN</a:Code>
+<a:CreationDate>1717239629</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1717239633</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {F66D5A50-B430-4FEE-A836-9AB95F59AD64}
+DAT 1717239629</a:History>
+<a:DataType>DT</a:DataType>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o37">
+<a:ObjectID>3BBDAB8D-62BE-49B7-9ED5-B634037D9A35</a:ObjectID>
+<a:Name>CATEGORIES</a:Name>
+<a:Code>CATEGORIES</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {8524BB9F-D5A3-48F0-8814-52D173232F1A}
+DAT 1716846357</a:History>
+<c:Identifiers>
+<o:Identifier Id="o55">
+<a:ObjectID>7CAD5A85-1BF5-4F9D-81C9-88C5781E3150</a:ObjectID>
+<a:Name>id_category</a:Name>
+<a:Code>ID_CATEGORY</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {B941ACFC-4D91-4566-A742-06A459A26D71}
+DAT 1716846357</a:History>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o56"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o55"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o56">
+<a:ObjectID>B2C3BFB8-9A1E-4443-87BD-693995C04148</a:ObjectID>
+<a:Name>id_category</a:Name>
+<a:Code>ID_CATEGORY</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {CF3BC356-5D39-4A7E-98F1-E64402343D17}
+DAT 1716846357</a:History>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o57">
+<a:ObjectID>0DB8EF0E-A39B-4DF0-B93A-2E5A772FEB01</a:ObjectID>
+<a:Name>designation</a:Name>
+<a:Code>DESIGNATION</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {A2823844-B413-438C-81B4-F2BEB941F5F8}
+DAT 1716846357</a:History>
+<a:DataType>A100</a:DataType>
+<a:Length>100</a:Length>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o38">
+<a:ObjectID>7B32CBE0-8384-4F7B-A011-F69691EA6977</a:ObjectID>
+<a:Name>COURSES</a:Name>
+<a:Code>COURSES</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1717239633</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {156A238F-AF91-4754-956D-04243B92029B}
+DAT 1716846357</a:History>
+<c:Identifiers>
+<o:Identifier Id="o58">
+<a:ObjectID>AD50627B-413C-49F9-888D-D5DC04336209</a:ObjectID>
+<a:Name>id_course</a:Name>
+<a:Code>ID_COURSE</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {949973E7-182C-41B7-9B20-014396D0030D}
+DAT 1716846357</a:History>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o59"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o58"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o59">
+<a:ObjectID>5F2FB2E0-FA0B-4DC7-B5B5-1DF4CF7080FB</a:ObjectID>
+<a:Name>id_course</a:Name>
+<a:Code>ID_COURSE</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {E116C9C7-041D-4C1F-899D-D010F1B8D839}
+DAT 1716846357</a:History>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o60">
+<a:ObjectID>867F82C4-F8E3-42F9-85E6-E49919F2626D</a:ObjectID>
+<a:Name>id_category</a:Name>
+<a:Code>ID_CATEGORY</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {CF3BC356-5D39-4A7E-98F1-E64402343D17},{A625D40B-DD3A-4367-9CFC-3E371B399F74}
+DAT 1716846357</a:History>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o61">
+<a:ObjectID>C1375ADA-82E3-446C-809C-917628CD69CC</a:ObjectID>
+<a:Name>title</a:Name>
+<a:Code>TITLE</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {FDD971B8-5085-42B0-ADE2-34F796770B93}
+DAT 1716846357</a:History>
+<a:DataType>A100</a:DataType>
+<a:Length>100</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o62">
+<a:ObjectID>A994F7E0-6AEF-4D4A-90CD-C129E183934B</a:ObjectID>
+<a:Name>image</a:Name>
+<a:Code>IMAGE</a:Code>
+<a:CreationDate>1717239629</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1717239633</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {6F733F49-F663-47D0-8693-E2337A794A8D}
+DAT 1717239629</a:History>
+<a:DataType>A100</a:DataType>
+<a:Length>100</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o63">
+<a:ObjectID>42F22D48-B41D-4846-BA0D-6C027DCB5B58</a:ObjectID>
+<a:Name>description</a:Name>
+<a:Code>DESCRIPTION</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {46792245-975C-4E04-A25D-C8644E8C77EA}
+DAT 1716846357</a:History>
+<a:DataType>A255</a:DataType>
+<a:Length>255</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o64">
+<a:ObjectID>9029011F-1601-41BB-9A6E-59CF07848A8D</a:ObjectID>
+<a:Name>level</a:Name>
+<a:Code>LEVEL</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {C6DAED70-0C6E-4952-A758-1A2A951130DA}
+DAT 1716846357</a:History>
+<a:DataType>A20</a:DataType>
+<a:Length>20</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o65">
+<a:ObjectID>C6C74DFE-DB12-4B42-A04F-7B87BE70D5E0</a:ObjectID>
+<a:Name>duration</a:Name>
+<a:Code>DURATION</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {9AE72C60-FDF2-446F-A078-CC383AA9E147}
+DAT 1716846357</a:History>
+<a:DataType>I</a:DataType>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o66">
+<a:ObjectID>57311668-2107-4963-91E9-21683B5A08D5</a:ObjectID>
+<a:Name>date_post</a:Name>
+<a:Code>DATE_POST</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {523F9DD6-F6C9-4972-947E-BBBA8F935F97}
+DAT 1716846357</a:History>
+<a:DataType>D</a:DataType>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o39">
+<a:ObjectID>5A4643F7-150F-45D6-81C0-3EAAFE93D31F</a:ObjectID>
+<a:Name>Lessons</a:Name>
+<a:Code>LESSONS</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1717239633</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {428DDD7D-4013-4F35-9C5D-3A2B13201A3E}
+DAT 1716846357</a:History>
+<c:Identifiers>
+<o:Identifier Id="o67">
+<a:ObjectID>F87B5BCF-5BDD-4E5B-8636-5773BB711A8C</a:ObjectID>
+<a:Name>id_lesson</a:Name>
+<a:Code>ID_LESSON</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {37D77DA0-78CE-41E0-A176-721A33567186}
+DAT 1716846357</a:History>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o68"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o67"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o68">
+<a:ObjectID>A13A46BB-56FE-427E-8462-695F3195C98A</a:ObjectID>
+<a:Name>id_lesson</a:Name>
+<a:Code>ID_LESSON</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {EE7D5C2D-4883-4F70-A794-0DA9313B7FF9}
+DAT 1716846357</a:History>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o69">
+<a:ObjectID>D6A131E6-F4E7-4984-9A4A-138452654D23</a:ObjectID>
+<a:Name>id_course</a:Name>
+<a:Code>ID_COURSE</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {E116C9C7-041D-4C1F-899D-D010F1B8D839},{7B78AFBE-01E4-49E6-9017-D816A2777D95}
+DAT 1716846357</a:History>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o70">
+<a:ObjectID>2255F4E0-DFCB-40EB-88BF-6F4639F6A9BE</a:ObjectID>
+<a:Name>id_instructor</a:Name>
+<a:Code>ID_INSTRUCTOR</a:Code>
+<a:CreationDate>1716851497</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716851500</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {40FAB9F6-C97C-460F-A61A-C728E61ECBF4},{4BC1DEB4-748F-4A0E-8C85-CDA62D78F51F}
+DAT 1716851497</a:History>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o71">
+<a:ObjectID>D7B81D74-A30F-4C7D-8908-7285EDC773C4</a:ObjectID>
+<a:Name>title</a:Name>
+<a:Code>TITLE</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {86FF9A48-AE46-461A-9E50-E9C3B5BD3442}
+DAT 1716846357</a:History>
+<a:DataType>A100</a:DataType>
+<a:Length>100</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o72">
+<a:ObjectID>0C0203E6-465C-4127-99C2-E85620B35008</a:ObjectID>
+<a:Name>description</a:Name>
+<a:Code>DESCRIPTION</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {01EC65D3-4857-45E9-8AF6-6FEDC1DAE77D}
+DAT 1716846357</a:History>
+<a:DataType>A255</a:DataType>
+<a:Length>255</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o73">
+<a:ObjectID>0F5D39D4-14A6-4225-96F1-C4A074F6FCC2</a:ObjectID>
+<a:Name>contenu_image</a:Name>
+<a:Code>CONTENU_IMAGE</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {F6787C50-EB78-4557-98D6-E1D50AE696C1}
+DAT 1716846357</a:History>
+<a:DataType>A100</a:DataType>
+<a:Length>100</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o74">
+<a:ObjectID>BAB185D3-161D-4949-A431-EFD057532D3C</a:ObjectID>
+<a:Name>contenu_video</a:Name>
+<a:Code>CONTENU_VIDEO</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {CAE007AD-C4A4-4F21-970B-C91DBFAD6851}
+DAT 1716846357</a:History>
+<a:DataType>A100</a:DataType>
+<a:Length>100</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o75">
+<a:ObjectID>D1828110-12C9-44C4-96D8-41D3B2A22254</a:ObjectID>
+<a:Name>contenu_document</a:Name>
+<a:Code>CONTENU_DOCUMENT</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1717239633</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {8F2F738E-B173-455F-B86E-33E045C7785E}
+DAT 1716846357</a:History>
+<a:DataType>A100</a:DataType>
+<a:Length>100</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o76">
+<a:ObjectID>EFFF3A6C-0FC4-478F-BB62-B6B3F1122F22</a:ObjectID>
+<a:Name>date_post</a:Name>
+<a:Code>DATE_POST</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {9D7B9170-11B5-4E87-B4FA-3311F5573397}
+DAT 1716846357</a:History>
+<a:DataType>D</a:DataType>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o77">
+<a:ObjectID>543DE8BA-E7C7-46C0-9783-40DDAABBC88E</a:ObjectID>
+<a:Name>last_update</a:Name>
+<a:Code>LAST_UPDATE</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {A7ECF01C-AE46-4951-A200-E0229D07F2D0}
+DAT 1716846357</a:History>
+<a:DataType>D</a:DataType>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o40">
+<a:ObjectID>02A390AD-03D7-4ECB-8AE6-A620AE034C5D</a:ObjectID>
+<a:Name>QUIZZES</a:Name>
+<a:Code>QUIZZES</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {74CE676A-E518-4BC5-AD65-3A2B4A6D7843}
+DAT 1716846357</a:History>
+<c:Identifiers>
+<o:Identifier Id="o78">
+<a:ObjectID>64F6F0C5-5439-4E59-B229-71F00C7D13F3</a:ObjectID>
+<a:Name>id_quiz</a:Name>
+<a:Code>ID_QUIZ</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {7C883501-7D27-482F-8F14-C94E06BC9291}
+DAT 1716846357</a:History>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o79"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o78"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o79">
+<a:ObjectID>87DA97E4-0CA6-4B40-BFC1-0BF1FB1FE560</a:ObjectID>
+<a:Name>id_quiz</a:Name>
+<a:Code>ID_QUIZ</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {C16247CD-559A-4DB3-A818-7F045F6FE003}
+DAT 1716846357</a:History>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o80">
+<a:ObjectID>F18FC576-EA1B-4DC5-B973-2E1D672A5975</a:ObjectID>
+<a:Name>id_lesson</a:Name>
+<a:Code>ID_LESSON</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {EE7D5C2D-4883-4F70-A794-0DA9313B7FF9},{31AFBD59-A84A-4AAA-9924-70C16D45255F}
+DAT 1716846357</a:History>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o81">
+<a:ObjectID>F9DCD62B-095D-4679-9D12-C71B741BE321</a:ObjectID>
+<a:Name>id_instructor</a:Name>
+<a:Code>ID_INSTRUCTOR</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {40FAB9F6-C97C-460F-A61A-C728E61ECBF4},{A9394B42-3E6A-4E08-AC29-459E27F5E484}
+DAT 1716846357</a:History>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o82">
+<a:ObjectID>39B3283E-5E49-4AF9-8FB3-79ACEC74163E</a:ObjectID>
+<a:Name>title</a:Name>
+<a:Code>TITLE</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {A6ECEF63-45F1-43CD-A433-F6FF7735F82B}
+DAT 1716846357</a:History>
+<a:DataType>A100</a:DataType>
+<a:Length>100</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o83">
+<a:ObjectID>352022DD-61D8-47FC-BAFE-90F2CC648F60</a:ObjectID>
+<a:Name>description</a:Name>
+<a:Code>DESCRIPTION</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {A8A32945-D2B5-4DC1-96E5-D125B90D3BE5}
+DAT 1716846357</a:History>
+<a:DataType>A255</a:DataType>
+<a:Length>255</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o84">
+<a:ObjectID>53E86CAB-F327-46CD-9EB1-A4525AC54CC5</a:ObjectID>
+<a:Name>contenu_document</a:Name>
+<a:Code>CONTENU_DOCUMENT</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1717239633</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {7B8039CC-4F13-44CA-B0FB-53039BCD7C41}
+DAT 1716846357</a:History>
+<a:DataType>A100</a:DataType>
+<a:Length>100</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o85">
+<a:ObjectID>3B57ACA2-794F-4872-AAD6-E5599C19F34C</a:ObjectID>
+<a:Name>question</a:Name>
+<a:Code>QUESTION</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {F4FDE989-92AB-415F-9AE8-5FB2185102C0}
+DAT 1716846357</a:History>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o86">
+<a:ObjectID>D637A985-8054-4649-910B-F3ECF682BE95</a:ObjectID>
+<a:Name>answer</a:Name>
+<a:Code>ANSWER</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {7772F768-7918-4CE0-AB9B-252EB37D46B6}
+DAT 1716846357</a:History>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o87">
+<a:ObjectID>D0301863-E622-495B-87AD-51CF74D59108</a:ObjectID>
+<a:Name>date_post</a:Name>
+<a:Code>DATE_POST</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {71F144DC-BB9E-4AAA-A8F1-99A598FEC8D3}
+DAT 1716846357</a:History>
+<a:DataType>D</a:DataType>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o88">
+<a:ObjectID>518D5884-365B-4B27-8367-5A2D513B6E37</a:ObjectID>
+<a:Name>date_update</a:Name>
+<a:Code>DATE_UPDATE</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {8ABBD5D2-EBE1-40E5-8A39-37F3FCB8178D}
+DAT 1716846357</a:History>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o43">
+<a:ObjectID>19F8E92E-C8F6-482E-B215-054D785C4427</a:ObjectID>
+<a:Name>ADMINSTRATEUR</a:Name>
+<a:Code>ADMINSTRATEUR</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1717239633</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {3D18CECD-0A01-4240-B78C-21B0D21A720F}
+DAT 1716846357</a:History>
+<c:Identifiers>
+<o:Identifier Id="o89">
+<a:ObjectID>E62D43A5-3617-4A13-B3AD-FFA45D5E052D</a:ObjectID>
+<a:Name>id_admin</a:Name>
+<a:Code>ID_ADMIN</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {7E35EDDE-D2B8-40D1-A402-BC98AC8F2C89}
+DAT 1716846357</a:History>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o90"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o89"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o90">
+<a:ObjectID>7A9CC7FE-0310-476D-9F3F-BB384EB4BBC5</a:ObjectID>
+<a:Name>id_admin</a:Name>
+<a:Code>ID_ADMIN</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {A5FC2E5F-597B-4079-9F93-1D61887F461A}
+DAT 1716846357</a:History>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o91">
+<a:ObjectID>228A0924-61EC-4958-85B2-22781493A5C9</a:ObjectID>
+<a:Name>first_name</a:Name>
+<a:Code>FIRST_NAME</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {2A95171B-462B-4596-9B8D-33B648A35FF8}
+DAT 1716846357</a:History>
+<a:DataType>A30</a:DataType>
+<a:Length>30</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o92">
+<a:ObjectID>6880A7F7-A491-42D5-B491-9FC1C747B6A8</a:ObjectID>
+<a:Name>last_name</a:Name>
+<a:Code>LAST_NAME</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {EFDF26E6-67B3-4176-B8E0-A7DF8ABC502D}
+DAT 1716846357</a:History>
+<a:DataType>A30</a:DataType>
+<a:Length>30</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o93">
+<a:ObjectID>5611FE19-08CB-4B49-B6D1-BDD84675581C</a:ObjectID>
+<a:Name>email</a:Name>
+<a:Code>EMAIL</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {9D46883D-724A-4888-817E-ED15A7A63E58}
+DAT 1716846357</a:History>
+<a:DataType>A50</a:DataType>
+<a:Length>50</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o94">
+<a:ObjectID>0804C2FA-FCCA-49E0-ADCA-6DB9A1F426F2</a:ObjectID>
+<a:Name>password</a:Name>
+<a:Code>PASSWORD</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {8C3C968A-EF7A-43E7-A327-4307E0C1F5EC}
+DAT 1716846357</a:History>
+<a:DataType>A255</a:DataType>
+<a:Length>255</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o95">
+<a:ObjectID>811E52E6-FC08-4F83-A5D5-F9EE54859352</a:ObjectID>
+<a:Name>role</a:Name>
+<a:Code>ROLE</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {D0916EA9-088F-46D4-A618-421ECE62DCBF}
+DAT 1716846357</a:History>
+<a:DataType>A20</a:DataType>
+<a:Length>20</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o96">
+<a:ObjectID>61A324C1-7FFD-44B0-A66F-1A2BA59BDF75</a:ObjectID>
+<a:Name>date_creation</a:Name>
+<a:Code>DATE_CREATION</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1717239633</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {DE6550C7-2864-489B-BF39-9BB64F2C0969}
+DAT 1716846357</a:History>
+<a:DataType>DT</a:DataType>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o97">
+<a:ObjectID>06025D44-823D-454A-88FD-87F24BCFECD2</a:ObjectID>
+<a:Name>last_login</a:Name>
+<a:Code>LAST_LOGIN</a:Code>
+<a:CreationDate>1717239629</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1717239633</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {F50C8F22-CE0C-4B91-851B-7D86F887B886}
+DAT 1717239629</a:History>
+<a:DataType>DT</a:DataType>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o45">
+<a:ObjectID>B291FC27-3740-46DF-8986-6DE2B1A277E7</a:ObjectID>
+<a:Name>INSTRUCTORS</a:Name>
+<a:Code>INSTRUCTORS</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1717239633</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {9885B0D9-D59A-4A2C-9960-ADB0FBE6D8DC}
+DAT 1716846357</a:History>
+<c:Identifiers>
+<o:Identifier Id="o98">
+<a:ObjectID>1779F9C5-3559-475F-A5A4-DB6B37D43A99</a:ObjectID>
+<a:Name>id_instructor</a:Name>
+<a:Code>ID_INSTRUCTOR</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {82FD0050-089B-4BBA-9C8B-61B06F17684D}
+DAT 1716846357</a:History>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o99"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o98"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o99">
+<a:ObjectID>0DCAF22D-0B22-4F57-97DB-AD8E6F1E6988</a:ObjectID>
+<a:Name>id_instructor</a:Name>
+<a:Code>ID_INSTRUCTOR</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {40FAB9F6-C97C-460F-A61A-C728E61ECBF4}
+DAT 1716846357</a:History>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o100">
+<a:ObjectID>C0264CE0-37D2-4FD6-BCCF-4D24FB751EE3</a:ObjectID>
+<a:Name>first_name</a:Name>
+<a:Code>FIRST_NAME</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {E497FC37-8121-4289-9697-3ABA09723704}
+DAT 1716846357</a:History>
+<a:DataType>A30</a:DataType>
+<a:Length>30</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o101">
+<a:ObjectID>B84625A9-CBDA-4E79-B2FB-96DA77B76109</a:ObjectID>
+<a:Name>last_name</a:Name>
+<a:Code>LAST_NAME</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {3C7F501F-C1EA-4F66-99C2-D3A54A6C0071}
+DAT 1716846357</a:History>
+<a:DataType>A30</a:DataType>
+<a:Length>30</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o102">
+<a:ObjectID>1B0FF431-4EE1-4F0B-9442-7FAA40C83010</a:ObjectID>
+<a:Name>email</a:Name>
+<a:Code>EMAIL</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {C95C81EB-F06B-4C2F-A086-90B8FAEC4A3E}
+DAT 1716846357</a:History>
+<a:DataType>A50</a:DataType>
+<a:Length>50</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o103">
+<a:ObjectID>263C8A56-C7A9-4A51-AB2B-B8A114ABBDB8</a:ObjectID>
+<a:Name>password</a:Name>
+<a:Code>PASSWORD</a:Code>
+<a:CreationDate>1717239629</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1717239633</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {279C7A4F-FA61-4B6A-A77E-BED3C9AA39B9}
+DAT 1717239629</a:History>
+<a:DataType>A255</a:DataType>
+<a:Length>255</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o104">
+<a:ObjectID>83334401-B4FA-46DF-AB6F-C30DDF4F6A73</a:ObjectID>
+<a:Name>domaine</a:Name>
+<a:Code>DOMAINE</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {D9916E44-C682-4813-B59B-5EC8A4A238EE}
+DAT 1716846357</a:History>
+<a:DataType>A50</a:DataType>
+<a:Length>50</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o105">
+<a:ObjectID>E6EA5B82-8DF8-4B47-8CFD-A5439EFE4A8B</a:ObjectID>
+<a:Name>date_creation</a:Name>
+<a:Code>DATE_CREATION</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1717239633</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {DCA03D46-C439-4A01-8451-A2C0C8CB15E5}
+DAT 1716846357</a:History>
+<a:DataType>DT</a:DataType>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o41">
+<a:ObjectID>0F02E92A-210C-4C5C-983E-F19488D261BC</a:ObjectID>
+<a:Name>PROGRESSE</a:Name>
+<a:Code>PROGRESSE</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {11B2BDFD-4A61-4CB8-B0A0-8F1E96F892F6}
+DAT 1716846357</a:History>
+<c:Identifiers>
+<o:Identifier Id="o106">
+<a:ObjectID>6B3F4347-70D9-474D-8077-F56FF5499C45</a:ObjectID>
+<a:Name>Identifiant_1</a:Name>
+<a:Code>IDENTIFIANT_1</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o107"/>
+<o:EntityAttribute Ref="o108"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o106"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o107">
+<a:ObjectID>0A152385-D2E6-482E-BF34-DB8132265D03</a:ObjectID>
+<a:Name>id_user</a:Name>
+<a:Code>ID_USER</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {B779F889-CA39-4FA8-B2B8-3211918088AB},{2284499D-B8AC-4D18-95EF-FDBD0B9D2AF4}
+DAT 1716846357</a:History>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o108">
+<a:ObjectID>67C637D7-9B41-49B6-BDDE-121E493BFB51</a:ObjectID>
+<a:Name>id_lesson</a:Name>
+<a:Code>ID_LESSON</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {EE7D5C2D-4883-4F70-A794-0DA9313B7FF9},{49055128-ED3D-465E-83C8-A9E9E4765521}
+DAT 1716846357</a:History>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o109">
+<a:ObjectID>B1B19A92-F642-4BC9-A64C-49321276B389</a:ObjectID>
+<a:Name>id_progress</a:Name>
+<a:Code>ID_PROGRESS</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {07755C7B-2794-495C-9648-E316A5B33348}
+DAT 1716846357</a:History>
+<a:DataType>I</a:DataType>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o110">
+<a:ObjectID>6512EA59-0D09-4A34-910B-458E89CA903C</a:ObjectID>
+<a:Name>titre_lesson</a:Name>
+<a:Code>TITRE_LESSON</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1717239633</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {F0EC8AAA-EF9D-4BE9-AE4D-9527685DC14C}
+DAT 1716846357</a:History>
+<a:DataType>A50</a:DataType>
+<a:Length>50</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o111">
+<a:ObjectID>2C3E3613-C00C-41D4-9C0E-54D32478B7C0</a:ObjectID>
+<a:Name>status</a:Name>
+<a:Code>STATUS</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {7D6FCC75-DC41-4DED-BD31-075DA749F8EF}
+DAT 1716846357</a:History>
+<a:DataType>A50</a:DataType>
+<a:Length>50</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o112">
+<a:ObjectID>C92A62DD-16C5-4AE5-82CF-298B8B081AEF</a:ObjectID>
+<a:Name>start_time</a:Name>
+<a:Code>START_TIME</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {F9A0C0AC-1564-4A5A-8314-8BFA2E3C6549}
+DAT 1716846357</a:History>
+<a:DataType>DT</a:DataType>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o113">
+<a:ObjectID>D4B1FC76-42E8-4FA3-9E83-1D56072A6D23</a:ObjectID>
+<a:Name>end_time</a:Name>
+<a:Code>END_TIME</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {022E6F39-F5D7-4C2F-AC90-E82656690665}
+DAT 1716846357</a:History>
+<a:DataType>DT</a:DataType>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o44">
+<a:ObjectID>76369C3B-EDF3-4DBC-9C41-1A9825F8FC38</a:ObjectID>
+<a:Name>NOTIFICATIONS</a:Name>
+<a:Code>NOTIFICATIONS</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {608ABF19-ACCE-4ADF-8D94-963BAB719F2E}
+DAT 1716846357</a:History>
+<c:Identifiers>
+<o:Identifier Id="o114">
+<a:ObjectID>49482989-053C-4D7D-9443-17453F21C61A</a:ObjectID>
+<a:Name>Identifiant_1</a:Name>
+<a:Code>IDENTIFIANT_1</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o115"/>
+<o:EntityAttribute Ref="o116"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o114"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o115">
+<a:ObjectID>E27F6C39-D207-4127-964B-CA52CEE1285A</a:ObjectID>
+<a:Name>id_course</a:Name>
+<a:Code>ID_COURSE</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {E116C9C7-041D-4C1F-899D-D010F1B8D839},{5C3F726B-049F-4C68-A489-DE336B77DD38}
+DAT 1716846357</a:History>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o116">
+<a:ObjectID>C7E69586-7E99-400D-8FF5-8A7850B3EA47</a:ObjectID>
+<a:Name>id_user</a:Name>
+<a:Code>ID_USER</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {B779F889-CA39-4FA8-B2B8-3211918088AB},{1757F82B-E590-489D-80E5-7CDC8A58DE4F}
+DAT 1716846357</a:History>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o117">
+<a:ObjectID>4CB697F3-ED82-4E03-95D0-93957A6EAD8C</a:ObjectID>
+<a:Name>updates_title</a:Name>
+<a:Code>UPDATES_TITLE</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {123646CC-0CBF-43ED-BE5D-F1F470584B85}
+DAT 1716846357</a:History>
+<a:DataType>A100</a:DataType>
+<a:Length>100</a:Length>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o118">
+<a:ObjectID>FF732595-6A10-4314-A9F4-5A759A510FD1</a:ObjectID>
+<a:Name>message</a:Name>
+<a:Code>MESSAGE</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {08E409A6-406A-4E8B-BFF7-6904D87A696D}
+DAT 1716846357</a:History>
+<a:DataType>A255</a:DataType>
+<a:Length>255</a:Length>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o46">
+<a:ObjectID>578D1430-DF86-4DFE-B7B9-05B9D3310DFD</a:ObjectID>
+<a:Name>User_quiz</a:Name>
+<a:Code>USER_QUIZ</a:Code>
+<a:CreationDate>1717239629</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1717239633</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {CD421535-BBF7-4996-9A20-E107485B0B01}
+DAT 1717239629</a:History>
+<c:Identifiers>
+<o:Identifier Id="o119">
+<a:ObjectID>7F4E492D-DB9E-4A84-A37C-4D2C00A98D2A</a:ObjectID>
+<a:Name>Identifiant_1</a:Name>
+<a:Code>IDENTIFIANT_1</a:Code>
+<a:CreationDate>1717239629</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1717239633</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o120"/>
+<o:EntityAttribute Ref="o121"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o119"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o120">
+<a:ObjectID>BD5A42F9-4D3E-4F8C-820E-80C6CFB21D89</a:ObjectID>
+<a:Name>id_user</a:Name>
+<a:Code>ID_USER</a:Code>
+<a:CreationDate>1717239629</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1717239633</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {B779F889-CA39-4FA8-B2B8-3211918088AB},{8DA2E79D-E126-4CEA-AFC4-0B9EB3EEDD5E}
+DAT 1717239629</a:History>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o121">
+<a:ObjectID>92098657-338D-4E71-8170-49B44F3D22A5</a:ObjectID>
+<a:Name>id_quiz</a:Name>
+<a:Code>ID_QUIZ</a:Code>
+<a:CreationDate>1717239629</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1717239633</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {C16247CD-559A-4DB3-A818-7F045F6FE003},{51A205EF-0BA2-4142-B3DB-1A95AF049374}
+DAT 1717239629</a:History>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o122">
+<a:ObjectID>7F5C682B-42F6-4D41-8620-E5D59DCE4E86</a:ObjectID>
+<a:Name>score</a:Name>
+<a:Code>SCORE</a:Code>
+<a:CreationDate>1717239629</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1717239633</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {29B07058-EABC-428A-A6A9-619B92B6086C}
+DAT 1717239629</a:History>
+<a:DataType>I</a:DataType>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o123">
+<a:ObjectID>98F8E832-FC3E-4EBC-BADD-F41F1B50F7DE</a:ObjectID>
+<a:Name>date_quiz</a:Name>
+<a:Code>DATE_QUIZ</a:Code>
+<a:CreationDate>1717239629</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1717239633</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {82AC6C9C-7878-4988-BE30-3FDB4F673164}
+DAT 1717239629</a:History>
+<a:DataType>D</a:DataType>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+</c:Entities>
+<c:Relationships>
+<o:Relationship Id="o8">
+<a:ObjectID>4D0D0D2B-84E7-4D1B-9AD6-7B762DF80E28</a:ObjectID>
+<a:Name>Belong</a:Name>
+<a:Code>BELONG</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {A625D40B-DD3A-4367-9CFC-3E371B399F74}
+DAT 1716846357</a:History>
+<a:Entity1ToEntity2RoleCardinality>1,n</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>1,1</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o38"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o37"/>
+</c:Object2>
+<c:Joins>
+<o:RelationshipJoin Id="o124">
+<a:ObjectID>842A3371-57FA-482D-9691-B6DD41EE607D</a:ObjectID>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<c:Object1>
+<o:EntityAttribute Ref="o56"/>
+</c:Object1>
+<c:Object2>
+<o:EntityAttribute Ref="o60"/>
+</c:Object2>
+</o:RelationshipJoin>
+</c:Joins>
+<c:ParentIdentifier>
+<o:Identifier Ref="o55"/>
+</c:ParentIdentifier>
+</o:Relationship>
+<o:Relationship Id="o11">
+<a:ObjectID>475A8D6F-4B9F-4B4A-A229-E591BA02242E</a:ObjectID>
+<a:Name>content</a:Name>
+<a:Code>CONTENT</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {7B78AFBE-01E4-49E6-9017-D816A2777D95}
+DAT 1716846357</a:History>
+<a:Entity1ToEntity2RoleCardinality>1,n</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>1,1</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o39"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o38"/>
+</c:Object2>
+<c:Joins>
+<o:RelationshipJoin Id="o125">
+<a:ObjectID>8DD383CE-EA27-464C-9C13-DFD05DD93676</a:ObjectID>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<c:Object1>
+<o:EntityAttribute Ref="o59"/>
+</c:Object1>
+<c:Object2>
+<o:EntityAttribute Ref="o69"/>
+</c:Object2>
+</o:RelationshipJoin>
+</c:Joins>
+<c:ParentIdentifier>
+<o:Identifier Ref="o58"/>
+</c:ParentIdentifier>
+</o:Relationship>
+<o:Relationship Id="o14">
+<a:ObjectID>A2049D9A-5412-4915-AD3B-6C4294356E38</a:ObjectID>
+<a:Name>TEST</a:Name>
+<a:Code>TEST</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {31AFBD59-A84A-4AAA-9924-70C16D45255F}
+DAT 1716846357</a:History>
+<a:Entity1ToEntity2RoleCardinality>1,1</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>1,n</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o39"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o40"/>
+</c:Object2>
+<c:Joins>
+<o:RelationshipJoin Id="o126">
+<a:ObjectID>170EB771-C0A5-4EB1-BCB8-29472AF5356D</a:ObjectID>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<c:Object1>
+<o:EntityAttribute Ref="o68"/>
+</c:Object1>
+<c:Object2>
+<o:EntityAttribute Ref="o80"/>
+</c:Object2>
+</o:RelationshipJoin>
+</c:Joins>
+<c:ParentIdentifier>
+<o:Identifier Ref="o67"/>
+</c:ParentIdentifier>
+</o:Relationship>
+<o:Relationship Id="o17">
+<a:ObjectID>30B2A846-6B29-4029-B5C3-4D04BC70F330</a:ObjectID>
+<a:Name>create</a:Name>
+<a:Code>CREATE</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {A9394B42-3E6A-4E08-AC29-459E27F5E484}
+DAT 1716846357</a:History>
+<a:Entity1ToEntity2RoleCardinality>1,n</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>1,1</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o40"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o45"/>
+</c:Object2>
+<c:Joins>
+<o:RelationshipJoin Id="o127">
+<a:ObjectID>12BC3B9B-4E11-4F5E-8784-685E5F4D5491</a:ObjectID>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<c:Object1>
+<o:EntityAttribute Ref="o99"/>
+</c:Object1>
+<c:Object2>
+<o:EntityAttribute Ref="o81"/>
+</c:Object2>
+</o:RelationshipJoin>
+</c:Joins>
+<c:ParentIdentifier>
+<o:Identifier Ref="o98"/>
+</c:ParentIdentifier>
+</o:Relationship>
+<o:Relationship Id="o23">
+<a:ObjectID>B6EE02E6-7C9C-4D8F-91D7-9F898E623E70</a:ObjectID>
+<a:Name>PROGRESSE</a:Name>
+<a:Code>PROGRESSE2</a:Code>
+<a:CreationDate>0</a:CreationDate>
+<a:Creator/>
+<a:ModificationDate>0</a:ModificationDate>
+<a:Modifier/>
+<a:History>ORG {2284499D-B8AC-4D18-95EF-FDBD0B9D2AF4}
+DAT 1716846357</a:History>
+<a:DependentRole>A</a:DependentRole>
+<a:Entity1ToEntity2RoleCardinality>1,1</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>0,n</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o36"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o41"/>
+</c:Object2>
+<c:Joins>
+<o:RelationshipJoin Id="o128">
+<a:ObjectID>D44C3240-1EA5-4240-82FF-2127ECD67DFD</a:ObjectID>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<c:Object1>
+<o:EntityAttribute Ref="o48"/>
+</c:Object1>
+<c:Object2>
+<o:EntityAttribute Ref="o107"/>
+</c:Object2>
+</o:RelationshipJoin>
+</c:Joins>
+<c:ParentIdentifier>
+<o:Identifier Ref="o47"/>
+</c:ParentIdentifier>
+</o:Relationship>
+<o:Relationship Id="o25">
+<a:ObjectID>A091B7E6-B11D-44A7-98EF-D5697FE51A1A</a:ObjectID>
+<a:Name>PROGRESSE</a:Name>
+<a:Code>PROGRESSE</a:Code>
+<a:CreationDate>0</a:CreationDate>
+<a:Creator/>
+<a:ModificationDate>0</a:ModificationDate>
+<a:Modifier/>
+<a:History>ORG {49055128-ED3D-465E-83C8-A9E9E4765521}
+DAT 1716846357</a:History>
+<a:DependentRole>A</a:DependentRole>
+<a:Entity1ToEntity2RoleCardinality>1,1</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>0,n</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o39"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o41"/>
+</c:Object2>
+<c:Joins>
+<o:RelationshipJoin Id="o129">
+<a:ObjectID>A0D44EE0-AABA-454C-8E2C-075BAE4CF396</a:ObjectID>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<c:Object1>
+<o:EntityAttribute Ref="o68"/>
+</c:Object1>
+<c:Object2>
+<o:EntityAttribute Ref="o108"/>
+</c:Object2>
+</o:RelationshipJoin>
+</c:Joins>
+<c:ParentIdentifier>
+<o:Identifier Ref="o67"/>
+</c:ParentIdentifier>
+</o:Relationship>
+<o:Relationship Id="o33">
+<a:ObjectID>EC217D4B-A567-4D55-BADC-18D74C69BE10</a:ObjectID>
+<a:Name>User_quiz</a:Name>
+<a:Code>USER_QUIZ2</a:Code>
+<a:CreationDate>0</a:CreationDate>
+<a:Creator/>
+<a:ModificationDate>1717239633</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {8DA2E79D-E126-4CEA-AFC4-0B9EB3EEDD5E}
+DAT 1717239629</a:History>
+<a:DependentRole>A</a:DependentRole>
+<a:Entity1ToEntity2RoleCardinality>1,1</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>1,n</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o36"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o46"/>
+</c:Object2>
+<c:Joins>
+<o:RelationshipJoin Id="o130">
+<a:ObjectID>9269BC74-7080-46F1-AC83-D48489EEBCC2</a:ObjectID>
+<a:CreationDate>1717239629</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1717239633</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<c:Object1>
+<o:EntityAttribute Ref="o48"/>
+</c:Object1>
+<c:Object2>
+<o:EntityAttribute Ref="o120"/>
+</c:Object2>
+</o:RelationshipJoin>
+</c:Joins>
+<c:ParentIdentifier>
+<o:Identifier Ref="o47"/>
+</c:ParentIdentifier>
+</o:Relationship>
+<o:Relationship Id="o35">
+<a:ObjectID>4391C9B2-B3A0-44E4-AB47-AD5D43D4374E</a:ObjectID>
+<a:Name>User_quiz</a:Name>
+<a:Code>USER_QUIZ</a:Code>
+<a:CreationDate>0</a:CreationDate>
+<a:Creator/>
+<a:ModificationDate>1717239633</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {51A205EF-0BA2-4142-B3DB-1A95AF049374}
+DAT 1717239629</a:History>
+<a:DependentRole>A</a:DependentRole>
+<a:Entity1ToEntity2RoleCardinality>1,1</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>1,n</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o40"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o46"/>
+</c:Object2>
+<c:Joins>
+<o:RelationshipJoin Id="o131">
+<a:ObjectID>F644F5C3-0FE6-4D9D-BF82-81F4B76BAC44</a:ObjectID>
+<a:CreationDate>1717239629</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1717239633</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<c:Object1>
+<o:EntityAttribute Ref="o79"/>
+</c:Object1>
+<c:Object2>
+<o:EntityAttribute Ref="o121"/>
+</c:Object2>
+</o:RelationshipJoin>
+</c:Joins>
+<c:ParentIdentifier>
+<o:Identifier Ref="o78"/>
+</c:ParentIdentifier>
+</o:Relationship>
+<o:Relationship Id="o19">
+<a:ObjectID>0A38C60A-04B5-4A05-81F9-36BEB8CD69D5</a:ObjectID>
+<a:Name>add</a:Name>
+<a:Code>ADD</a:Code>
+<a:CreationDate>1716851497</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716851500</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:History>ORG {4BC1DEB4-748F-4A0E-8C85-CDA62D78F51F}
+DAT 1716851497</a:History>
+<a:Entity1ToEntity2RoleCardinality>1,1</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>1,n</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o45"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o39"/>
+</c:Object2>
+<c:Joins>
+<o:RelationshipJoin Id="o132">
+<a:ObjectID>D7E8C714-0B93-4645-A44D-924ADB4CB327</a:ObjectID>
+<a:CreationDate>1716851497</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716851500</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<c:Object1>
+<o:EntityAttribute Ref="o99"/>
+</c:Object1>
+<c:Object2>
+<o:EntityAttribute Ref="o70"/>
+</c:Object2>
+</o:RelationshipJoin>
+</c:Joins>
+<c:ParentIdentifier>
+<o:Identifier Ref="o98"/>
+</c:ParentIdentifier>
+</o:Relationship>
+<o:Relationship Id="o28">
+<a:ObjectID>BA3E0EEA-3115-47C0-9237-C5D08B8C5068</a:ObjectID>
+<a:Name>NOTIFICATIONS</a:Name>
+<a:Code>NOTIFICATIONS2</a:Code>
+<a:CreationDate>0</a:CreationDate>
+<a:Creator/>
+<a:ModificationDate>0</a:ModificationDate>
+<a:Modifier/>
+<a:History>ORG {5C3F726B-049F-4C68-A489-DE336B77DD38}
+DAT 1716846357</a:History>
+<a:DependentRole>A</a:DependentRole>
+<a:Entity1ToEntity2RoleCardinality>1,1</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>0,n</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o38"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o44"/>
+</c:Object2>
+<c:Joins>
+<o:RelationshipJoin Id="o133">
+<a:ObjectID>3DB50B7D-4CE9-4347-B6D2-8564EA12773B</a:ObjectID>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<c:Object1>
+<o:EntityAttribute Ref="o59"/>
+</c:Object1>
+<c:Object2>
+<o:EntityAttribute Ref="o115"/>
+</c:Object2>
+</o:RelationshipJoin>
+</c:Joins>
+<c:ParentIdentifier>
+<o:Identifier Ref="o58"/>
+</c:ParentIdentifier>
+</o:Relationship>
+<o:Relationship Id="o30">
+<a:ObjectID>6AE1EC0D-C9B5-4D77-AC97-D596F42F261C</a:ObjectID>
+<a:Name>NOTIFICATIONS</a:Name>
+<a:Code>NOTIFICATIONS</a:Code>
+<a:CreationDate>0</a:CreationDate>
+<a:Creator/>
+<a:ModificationDate>0</a:ModificationDate>
+<a:Modifier/>
+<a:History>ORG {1757F82B-E590-489D-80E5-7CDC8A58DE4F}
+DAT 1716846357</a:History>
+<a:DependentRole>A</a:DependentRole>
+<a:Entity1ToEntity2RoleCardinality>1,1</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>0,n</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o36"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o44"/>
+</c:Object2>
+<c:Joins>
+<o:RelationshipJoin Id="o134">
+<a:ObjectID>995F25D8-15E2-4203-89C3-8AC36C583537</a:ObjectID>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<c:Object1>
+<o:EntityAttribute Ref="o48"/>
+</c:Object1>
+<c:Object2>
+<o:EntityAttribute Ref="o116"/>
+</c:Object2>
+</o:RelationshipJoin>
+</c:Joins>
+<c:ParentIdentifier>
+<o:Identifier Ref="o47"/>
+</c:ParentIdentifier>
+</o:Relationship>
+</c:Relationships>
+<c:TargetModels>
+<o:TargetModel Id="o135">
+<a:ObjectID>89965EE1-F3CF-4B07-A6F3-D5F44D6448FC</a:ObjectID>
+<a:Name>ModeleConceptuelDonnees_1</a:Name>
+<a:Code>MODELECONCEPTUELDONNEES_1</a:Code>
+<a:CreationDate>1716846357</a:CreationDate>
+<a:Creator>legion  pro</a:Creator>
+<a:ModificationDate>1716846357</a:ModificationDate>
+<a:Modifier>legion  pro</a:Modifier>
+<a:TargetModelURL>file:///C|/xampp/htdocs/BrainBoost_Academy/database/Conception/ModeleConceptuelDonnees_1.mcd</a:TargetModelURL>
+<a:TargetModelID>69CEB1D0-ED28-4B3F-AE21-84D089E435E2</a:TargetModelID>
+<a:TargetModelClassID>1E597170-9350-11D1-AB3C-0020AF71E433</a:TargetModelClassID>
+<c:SessionShortcuts>
+<o:Shortcut Ref="o3"/>
+</c:SessionShortcuts>
+</o:TargetModel>
+</c:TargetModels>
+</o:Model>
+</c:Children>
+</o:RootObject>
+
+</Model>

@@ -1,0 +1,43 @@
+body{
+    scroll-behavior: smooth;
+}
+
+.navbar-toggler{
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+    outline: none;
+}
+.nav-link{
+    color: #666777;
+    font-weight: 500;
+}
+.navbar{
+    background-color: aliceblue;
+}
+.form-signin{
+    margin-top: 50px;
+}
+
+.cardHover{
+    transition: .6s;
+    transform: scale(1);
+}
+.cardHover :hover{
+    background-color: #000000;
+    color: #fff;
+   
+}
+/* */
+.containerr {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
